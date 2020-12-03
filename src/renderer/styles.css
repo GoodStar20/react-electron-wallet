@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #f0f4f3;
+	margin: 0;
+}
+.title {
+	font-size: 36px;
+	font-weight: 700;
+	color: #1f2121;
+}
+.title-white {
+	font-size: 36px;
+	font-weight: 700;
+	color: #ffffff;
+}
+.sub-title {
+	margin-top: 16px;
+	font-size: 16px;
+	color: #5a5d60;
+}
+.sub-title-white {
+	margin-top: 16px;
+	font-size: 16px;
+	color: #ffffff;
+}
+.label-name {
+	font-size: 14px;
+	font-weight: 700;
+	color: #1f2121;
+}

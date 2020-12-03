@@ -1,0 +1,20 @@
+.import-content {
+	background-color: white;
+	border-radius: 10px;
+	padding: 100px;
+	align-items: center;
+}
+@media only screen and (min-width: 1280px) {
+	.import-content {
+		width: 580px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.import-content {
+		padding: 100px 32px;
+	}
+}
+.import-content img {
+	width: 240px;
+	margin-bottom: 50px;
+}

@@ -1,0 +1,65 @@
+.main {
+	position: relative;
+	min-height: 100vh;
+	height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+	.main {
+		padding: 0 40px 80px 40px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.main {
+		padding: 0 32px 80px 32px;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	.import-wallet {
+		margin-right: 20px;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.generate-wallet {
+		margin-left: 20px;
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+@media only screen and (max-width: 1279px) {
+	.generate-wallet {
+		margin-bottom: 80px;
+		margin-top: 40px;
+	}
+}
+
+.drop-down {
+	bottom: 40px;
+	cursor: pointer;
+}
+.loader-container {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	z-index: 1048;
+	background-color: #404040;
+	opacity: 0.8;
+	touch-action: none;
+}
+.loader {
+	border: 10px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 10px solid #029383;
+	width: 120px;
+	height: 120px;
+	opacity: 1;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+}

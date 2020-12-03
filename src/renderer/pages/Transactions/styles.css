@@ -1,0 +1,457 @@
+.transaction-header {
+	background-color: #029383;
+	position: relative;
+	padding-top: 40px;
+}
+.header-bar {
+	display: flex;
+	background-color: #0c0d0d;
+	border-radius: 10px;
+	padding: 40px;
+	width: 100%;
+}
+.division {
+	margin: 0 40px;
+	border-left: 2px solid #2f3333;
+	display: block;
+}
+.header-bar .logo {
+	display: flex;
+	align-items: center;
+}
+
+.header-bar .logo img {
+	width: 45px;
+	height: 45px;
+}
+.header-bar .logo span {
+	color: white;
+	font-size: 24px;
+	margin-left: 15px;
+}
+
+.wallet-address {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.wallet-address .address-icon {
+	border: 2px solid #2f3333;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wallet-address .address-icon .icon {
+	display: inline-block;
+	background-color: #fbc457;
+	width: 19px;
+	height: 20px;
+	-webkit-mask: url(../../assets/icons/address.svg);
+	mask-repeat: no-repeat;
+}
+.wallet-address .address-title {
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	flex: 1;
+}
+.wallet-address .address-title .title {
+	color: #b6bebe;
+	font-size: 14px;
+	font-weight: 500;
+}
+.wallet-address .address-title .detail {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.wallet-address .address-title .detail .name {
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 90%;
+}
+.wallet-address .address-title .detail .copy-icon {
+	background-color: white;
+	display: inline-block;
+	width: 15px;
+	height: 18px;
+	-webkit-mask: url(../../assets/icons/copy.svg);
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	margin-left: 40px;
+	position: absolute;
+	right: 0;
+}
+
+.wallet-balance {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.wallet-balance .balance-icon {
+	border: 2px solid #2f3333;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wallet-balance .balance-icon .icon {
+	display: inline-block;
+	background-color: #fbc457;
+	width: 19px;
+	height: 19px;
+	-webkit-mask: url(../../assets/icons/balance.svg);
+	mask-repeat: no-repeat;
+	mask-size: contain;
+}
+.wallet-balance .balance-title {
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.wallet-balance .balance-title .title {
+	color: #b6bebe;
+	font-size: 14px;
+	font-weight: 500;
+}
+.wallet-balance .balance-title .detail {
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.header-content .input-boxes {
+	display: flex;
+	width: 100%;
+	margin-top: 40px;
+}
+.header-content .input-boxes input {
+	height: 56px;
+	color: #1f2121;
+	font-size: 16px;
+}
+
+.input-boxes .send-btn {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.transaction-body {
+	background-color: #ffffff;
+	position: relative;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+.transaction-body .content {
+	display: flex;
+	width: 100%;
+	padding: 0px 40px;
+	flex-direction: column;
+}
+.content .table-header {
+	border: 2px solid #cbd5e0;
+	width: 100%;
+	display: flex;
+}
+
+.content .table-header .table-tr {
+	border-right: 2px solid #cbd5e0;
+	font-size: 14px;
+	color: #b6bebe;
+	padding: 10px 20px;
+}
+
+.content .table-tr:last-child {
+	border-right: none;
+}
+.content .table-tr.txid {
+	width: 14%;
+	color: #029383;
+}
+.content .table-tr.sender {
+	width: 16%;
+}
+.content .table-tr.recipient {
+	width: 16%;
+}
+.content .table-tr.timestamp {
+	text-align: center;
+	width: 14%;
+}
+.content .table-tr.amount {
+	width: 24%;
+	text-align: right !important;
+}
+.content .table-tr.fee {
+	width: 16%;
+	text-align: right !important;
+}
+.content .table-body .table-tr {
+	padding: 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.content .table-body .table-tr.sender:hover,
+.content .table-body .table-tr.recipient:hover {
+	color: #029383;
+}
+.content .table-body {
+	border-bottom: 2px solid #cbd5e0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1f2121;
+	padding: 13px 0px;
+	display: flex;
+	cursor: pointer;
+}
+.content .table-body:hover {
+	background-color: #f0f4f3;
+}
+.content .table-body .table-tr {
+	border-right: 2px solid #cbd5e0;
+	text-align: center;
+}
+.content .table-body .table-tr:last-child {
+	border-right: none;
+}
+.content .table-body .txid-icon {
+	display: none;
+	background-color: #029383;
+	width: 19px;
+	height: 19px;
+	-webkit-mask: url(../../assets/icons/Txid.svg);
+	mask-repeat: no-repeat;
+	mask-size: contain;
+}
+.content .table-body .txid-title {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.content .table-header,
+	.content .table-body {
+		flex-direction: row;
+	}
+	.content .mobile-table-body {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.transaction-header {
+		padding: 40px 32px 0px 32px;
+	}
+
+	.content .table-header,
+	.content .table-body {
+		display: none;
+	}
+	.content .table-body .txid-icon {
+		display: none;
+	}
+	.txid-title {
+		display: block;
+	}
+	.content .mobile-table-body {
+		display: block;
+	}
+	.mobile-table-body .table-body {
+		border-bottom: 2px solid #cbd5e0;
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+	}
+	.mobile-table-body .table-row {
+		padding-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.mobile-table-body .table-row .title {
+		color: #5a5d60;
+		font-size: 16px;
+	}
+	.mobile-table-body .table-row .dark-value {
+		color: #212225;
+		font-size: 16px;
+		font-weight: 500;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		text-align: right;
+		width: 340px;
+	}
+	.mobile-table-body .table-row .sender:hover,
+	.mobile-table-body .table-row .recipient:hover {
+		color: #029383;
+	}
+	.mobile-table-body .table-row .green-value {
+		color: #029383;
+		font-size: 16px;
+		font-weight: 500;
+		width: 340px;
+		text-align: right;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+	.header-bar .logo span {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.header-content .input-boxes {
+		display: flex;
+		width: 100%;
+		margin-top: 40px;
+		flex-direction: column;
+	}
+	.input-boxes .send-btn {
+		margin-left: 0px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+	.transaction-header {
+		padding: 40px 40px 0px 40px;
+	}
+	.content .table-body .txid-icon {
+		display: inline-block;
+	}
+	.content .table-body .txid-title {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	.transaction-header {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header-bar {
+		width: 1200px;
+	}
+	.transaction-body .content {
+		width: 1200px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.division {
+		display: none;
+	}
+	.header-bar {
+		flex-direction: column;
+	}
+	.header-bar .logo {
+		padding-bottom: 40px;
+		border-bottom: 2px solid #2f3333;
+	}
+	.wallet-address {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 374px) {
+	.wallet-address .address-icon {
+		display: none;
+	}
+	.wallet-balance .balance-icon {
+		display: none;
+	}
+}
+.header-content {
+	margin-top: 20px;
+	border-radius: 10px 10px 0px 0px;
+	padding: 40px 40px 30px 40px;
+	background-color: white;
+}
+
+@media only screen and (max-width: 639px) {
+	.mobile-table-body .table-row .dark-value {
+		width: 150px;
+	}
+	.mobile-table-body .table-row .green-value {
+		width: 150px;
+	}
+	.txid-icon {
+		display: none;
+	}
+	.txid-title {
+		display: block;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+	.table-tr.timestamp {
+		display: none;
+	}
+	.content .table-tr.txid {
+		width: 17%;
+	}
+	.content .table-tr.sender {
+		width: 19%;
+	}
+	.content .table-tr.recipient {
+		width: 19%;
+	}
+	.content .table-tr.amount {
+		width: 27%;
+	}
+	.content .table-tr.fee {
+		width: 18%;
+		border-right: none;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.table-tr.fee {
+		display: none;
+	}
+	.table-tr.timestamp {
+		display: none;
+	}
+	.content .table-tr.txid {
+		width: 15%;
+	}
+	.content .table-tr.sender {
+		width: 25%;
+	}
+	.content .table-tr.recipient {
+		width: 25%;
+	}
+	.content .table-tr.amount {
+		width: 35%;
+		border-right: none;
+	}
+}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	.table-tr.fee {
+		display: none;
+	}
+	.content .table-tr.txid {
+		width: 15%;
+	}
+	.content .table-tr.sender {
+		width: 25%;
+	}
+	.content .table-tr.recipient {
+		width: 25%;
+	}
+	.content .table-tr.amount {
+		width: 35%;
+		border-right: none;
+	}
+}
